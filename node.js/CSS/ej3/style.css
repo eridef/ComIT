@@ -1,0 +1,18 @@
+h1{
+    color: grey;
+}
+h2{
+    color: black;
+}
+p{
+    color: #00FF00;
+}
+div{
+    color: rgb(255, 0, 0); //no pisa el color por la herencia
+}
+ul{
+    color: #ee20b1;
+}
+hr{
+    border: 5 red;
+}

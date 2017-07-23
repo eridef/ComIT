@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/> <!-- corresponde un solo meta o uno para cada atributo? -->
+        <meta name="description" content="Mr. Robot logueo"/>
+        <meta name="keywords" content="mr. robot, serie, elliot, hacker, 2015, 2016"/>
+        <meta name="author" content="ro0m1"/>
+        <title>Registro de usuario</title>
+    </head>
+    <body>
+        <div id="contenedor">
+            <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Sing Up</legend>
+                    <input type="text" name="first" maxlength="20" placeholder="First Name" pattern="^[a-zA-Z]+$" required/>
+                    <br/>
+                    <input type="text" name="first" maxlength="20" placeholder="Last Name" pattern="^[a-zA-Z]+$" required/>
+                    <br/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <br/>
+                    <input type="password" name="password" maxlength="8" placeholder="New Password" required/>
+                    <br/>
+                    <input type="password" name="password" maxlength="8" placeholder="Confirm your Password" required/>
+                    <br/>
+                    <select name="country">
+                        <option value="argentina">Argentina</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                    <br/>
+                    <input type="checkbox" name="accept" value="true"/>I agree terms
+                    <br/>
+                    <input type="submit" name="submit" value="Next">
+                </fieldset>
+            </form>
+            <footer>
+                <hr/>
+                <a href="../">Página Principal</a>
+            </footer>
+        </div>
+    </body>
+</html>

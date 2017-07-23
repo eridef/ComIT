@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Gmail</title>
+    </head>
+    <body>
+        <div id="contenedor">
+            <form action="#" method="post">
+                <fieldset>
+                    <label for="name"><h3>Name</h3></label>
+                    <input type="text" name="first" placeholder="First" id="name" pattern="^[a-zA-Z]+$" required="required" maxlength="20"/>
+                    <input type="text" name="last" placeholder="Last" pattern="^[a-zA-Z]+$" required="required" maxlength="20"/>
+                    <label for="user"><h3>Choose your username</h3></label>
+                    <input type="text" name="username" placeholder="@gmail.com" id="user" required="required" maxlength="10"/> <!-- uso placeholder pero hay otro atributo que corresponde -->
+                    <label for="password"><h3>Create a password</h3></label>
+                    <input type="password" name="password" id="password" required="required" maxlength="8"/>
+                    <label for="password"><h3>Confirm your password</h3></label>
+                    <input type="password" name="password" required="required" maxlength="8"/>
+                    <label for="birthday"><h3>Birthday</h3></label>
+                    <select name="mes">
+                        <option value="">Month</option> <!-- ver esto-->
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                    <input type="text" name="day" placeholder="Day" required="required"/>
+                    <input type="text" name="year" placeholder="Year" required="required"/>
+                    <label for="gender"><h3>Gender</h3></label>
+                    <select name="gender">
+                        <option value="">I am...</option>
+                    </select>
+                    <label for="phone"><h3>Mobile number</h3></label>
+                    <select name="country">
+                        <option value="arg">Arg</option>
+                    </select>
+                    <input type="text" name="phone" value="+54" required="required" maxlength="11"/>
+                    <label for="email"><h3>You current email address</h3></label>
+                    <input type="email" name="email" id="email" required="required"/>
+                    <label for="location"><h3>Location</h3></label>
+                    <select name="location">
+                        <option value="argentina">Argentina</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                    <br/>
+                    <input type="submit" name="submit" value="Next step"/>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

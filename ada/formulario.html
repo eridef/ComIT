@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form onsubmit="return validar()">
+		<input type="text" name="nombre" placeholder="Nombre/s">
+		<input type="text" name="apellido" placeholder="Apellido/s">
+		<input type="number" name="caracteristica" placeholder="Característica">
+		<input type="number" name="telefono" placeholder="Teléfono"> <!-- ajustar la cantidad de caracteres ingresados-->
+		<input type="email" name="email" placeholder="Email">
+		<input type="number" name="edad" placeholder="Edad">
+
+		<button id="validar" onclick="this.disabled=true; this.value=’Enviando...’; this.form.submit()">¡Oka!</button>
+		<!--Dani en su codigo usa el onclick con la función, de igual manera que habiamos resuelto en la calculadora-->
+	</form>
+
+
+	<script type="text/javascript" src="formulario/formulario.js"></script>
+</body>
+</html>

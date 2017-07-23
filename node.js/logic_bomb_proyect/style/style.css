@@ -1,0 +1,46 @@
+body{
+   /* -webkit-background-size: cover;*/
+    background-image: url('img/03.jpg');
+   /* background-attachment: fixed;
+    overflow: scroll;
+    position: absolute;*/
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(25, 100, 200, 1);
+    /*font-family: 'Tangerine', cursive;*/
+    font-family: 'Great Vibes', cursive;
+    /*font-family: 'Dancing Script', cursive;*/
+    text-shadow: 4px 0px 3px #958282;
+
+    
+}
+h1{
+    font-size: 60px;
+    
+}
+nav{
+    background-color: rgba(255, 25, 255, 0.2);
+    width: 15%;
+    display: inline-block;
+}
+aside{
+    
+}
+#show{
+    background-color: rgba(255, 255, 0, 0.1);
+    width: 60%;
+    
+}
+#secundaria{
+    background-color: rgba(0, 255, 255, 0.2);
+    
+}
+footer{
+    background-color: rgba(255, 0, 255, 0.2);
+}

@@ -1,0 +1,147 @@
+//encabezado con menu
+//slider
+//modulo con img y texto (modal)
+//formulario de contacto (poner chapcha) validar con jquery
+//algun elemento del form tiene que ser select
+//footer
+//si se quiere, agregar google maps
+
+
+//orden de funciones en js, estoy invocando, se describe las funciones y evento de la pagina que quiero que se caguen una vez cargado el documento 
+
+//conviene declarar variables generales al principio del documento, si son locales, con la función propiamente dicha
+
+//puedo hacer mi framework para de validacion, por ejemplo
+
+$(document).ready(function(){
+	slider();
+	efectolink();
+	
+	$('#boton').on('click', function(){
+
+	validarMAil($('#mail').val());
+	-
+	-
+	-
+	-
+	})
+})
+
+//para que levante la informacion del select, tambien voy a necesitar la info del value, los option en html no van a estar, lo escribo en js
+
+var options = ['uno', 'uno', 'uno'];
+
+$(document).ready(function(){
+
+	var select = $('#seleccion'); -----> objeto html
+
+	for(i=0; i<options.length; i++){
+
+		value = i + 1;
+		var option = '<option value="'+value+'">'+options[i]+'</option>';
+		select.append(option);
+	}
+
+});
+
+//.hide() oculta una etiqueta (ej h1 o id/class, p#id)
+//.fadeOut(valor en milisegundos)
+//usar .children() es para la referencia de jerarquias en html
+
+//.$(#id).soblings(); se usa para ???
+
+// lo utilizo para cambiar el estilo ante un evento, .prev o .next son funciones con referencia al id
+
+	$('#segunda').prev().css(){
+		background = 'black'
+}
+
+//.eq(numero de posicion) ??
+
+img en a
+con .data('unid')  //levanta la foto con el id que corresponde
+
+keypress (captura de teclado)
+mouseover
+mouseenter
+mouseleave
+
+
+
+
+scroll
+$('.menu').on('click', function(event){
+	e.preventDefault();
+	link = $(this).attr('href'); // o si se usa data-link
+	link = $(this).data('link');
+	$('html, body').animate({
+		scrollTop:$(link).offset().top();
+	}, 500);
+
+
+
+
+
+	/*vid = $(this).data('link');
+	id = '#' + vid;
+	$(id).slideDown("fast", function(){
+
+		$(id).scrollTop();*/
+	});
+
+});
+
+
+en html
+<a class="menu" href="#news"> //sin efecto
+<a class="menu" href="#" data-link="#news">
+
+La animacion tiene un punto de partida y se puede ejecutar en cualquier parte
+
+
+var boton = $('boton');
+boton.on('mouseenter' , function(){
+	document.body.style.background = #000
+});
+
+boton.on('mouseleave' , function(){
+	document.body.style.background = #000
+});
+
+
+//fadeout
+
+var boton = $('#slider');
+boton.on('mouseenter', function(){
+	$('#slider').fadeOut(500, function(){
+
+	});
+});
+
+.bind('puedo combinar eventos')
+
+
+data-pos (para un arreglo de imagenes)
+
+
+if(){
+	var datos = $('#contacto').serialize();
+
+	console.log(datos);
+
+	$.ajax({
+		url:
+
+		
+	})
+} //incompleto
+
+$(document.ready){
+	$('#enviar').on('click', function(){
+	validar();
+	if (errores.length==0){
+		var datos = $('#form').serialize();
+		console.log(datos);
+	}
+	})
+}
