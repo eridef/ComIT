@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Amamos los pseudo elementos</title>
+        <style>
+            p{ /*con pseudoelemento ::selection no se aplica*/
+                background-color: #EE6790;
+            }
+            p::first-letter{
+                font-size: 30px;
+                font-weight: bold;
+                color: #ff0005;
+            }
+            p::first-line{
+                font-style: italic;
+            }
+            p::after{
+                content: 'FIN DE LA FIESTA';
+                font-weight: bold;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> Amamos los pseudo elementos</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima, soluta suscipit neque ad, eligendi, quia deleniti rem doloremque ipsum totam tenetur illo quidem ut est molestias voluptates quo blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima, soluta suscipit neque ad, eligendi, quia deleniti rem doloremque ipsum totam tenetur illo quidem ut est molestias voluptates quo blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima, soluta suscipit neque ad, eligendi, quia deleniti rem doloremque ipsum totam tenetur illo quidem ut est molestias voluptates quo blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima, soluta suscipit neque ad, eligendi, quia deleniti rem doloremque ipsum totam tenetur illo quidem ut est molestias voluptates quo blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima, soluta suscipit neque ad, eligendi, quia deleniti rem doloremque ipsum totam tenetur illo quidem ut est molestias voluptates quo blanditiis!</p>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A tomar lista!</title>
+        <style>
+            ul{
+                background-color: red;
+            }
+            ul li{
+                border: 1px solid black;
+                background-color: grey;
+            }
+            ul li:hover{
+                list-style: square inside;
+            }
+            .vacia{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            ol{
+                list-style: decimal-leading-zero outside;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>A tomar lista!</h1>
+        </header>
+        <div>
+            <ul>
+                <li>Ítem 1</li>
+                <li>Ítem 2</li>
+                <li>Ítem 3</li>
+            </ul>
+            <ul class="vacia">
+                <li>Ítem 1</li>
+                <li>Ítem 2</li>
+                <li>Ítem 3</li>
+            </ul>
+            <ol>
+                <li>Ítem 1</li>
+                <li>Ítem 2</li>
+                <li>Ítem 3</li>
+            </ol>
+        </div>
+    </body>
+</html>

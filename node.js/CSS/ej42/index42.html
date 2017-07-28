@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Twitter</title>
+        <style>
+            #contenedor{
+                border-top: 1px solid #CCC;
+                border-left: 1px solid #CCC;
+                width: 300px;
+                margin-top: 50px;
+                margin-left: 50px;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .campos{
+                border: 1px solid #CCC;
+                border-radius: 2px;
+            }
+            .user{
+                box-shadow: 0px 3px 5px 0px #DDD;
+                margin-bottom: 10px;
+                color: #BBB;
+            }
+            .boton{
+                background-color: white;
+                border: 1px solid lightskyblue;
+                border-radius: 20px;
+                color: lightskyblue;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .remember{
+                color: #999;
+                font-size: 10px;
+            }
+            .check{
+                border-color: lightskyblue;
+            }
+            .link{
+                color: lightskyblue;
+                text-decoration: none;
+            }
+            input[type="checkbox"]{
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                border: 1px solid lightskyblue;
+                width: 12px;
+                height: 12px;
+                border-radius: 2px;
+                margin: 0 5px 0 0;
+            }
+            input[type="checkbox"]#checkbox1:checked{
+                background: lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <form action="#">
+                    <input type="text" class="campos user" name="username" placeholder="Phone, email or username" required="required" size="40"/>
+                    <br/>
+                    <input type="password" class="campos" name="password" placeholder="Password" required="required" maxlength="8" size="30"/>
+                    <input type="submit" class="boton" name="submit" value="Log in"/>
+                    <div class="remember">
+                        <input type="checkbox" id="checkbox1" name="remember" value="remember" checked="checked"/><span>Remember me • </span><a href="#" class="link">Forgot password?</a>
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>

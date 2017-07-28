@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Gmail</title>
+        <style>
+            #contenedor{
+                background-color: #f4f4f4;
+                width: 400px;
+                padding: 20px 30px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input{
+                border: 1px solid #e0dfdf;
+                border-top-color:  #898b8e;
+                padding: 10px;
+                font-size: 15px;
+                font-weight: 500;
+                color: grey;
+                height: 15px;
+            }
+            input:hover{
+                border: 1px solid #898b8e;
+            }
+            #user{
+                border-right: none;
+            }
+            #gmail{
+                margin-left: -5px;
+                border-left: none;
+            }
+            select{
+                border-radius: 3px;
+                border: 1px solid #e0dfdf;
+                background-color: #f4f4f4;
+                font-weight: 800;
+            }
+            select:hover{
+                border: 1px solid #898b8e;
+            }
+            option{
+                height: 30px;
+                width: 120px;
+            }
+            option#gender , option#country{
+                width: 320px;
+            }
+            .mobile option{
+                width: 50px;
+            }
+            .mobile input{
+                margin-left: -5px;
+            }
+            #button{
+                margin: 30px 0 0 230px;
+                background-color:  #5b9df5;
+                border: 1px solid  #277aea;
+                border-radius: 5px;
+                color: white;
+                font-weight: 800;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <form action="#" method="post">
+                    <label for="name"><h3>Name</h3></label>
+                    <input type="text" name="first" placeholder="First" id="name" pattern="^[a-zA-Z]+$" required="required" maxlength="20" size="16"/>
+                    <input type="text" name="last" placeholder="Last" pattern="^[a-zA-Z]+$" required="required" maxlength="20" size="16"/>
+                    <label for="user"><h3>Choose your username</h3></label>
+                    <input type="text" name="username" id="user" required="required" maxlength="10" size="25"/> <!-- uso placeholder pero hay otro atributo que corresponde -->
+                    <input type="text" name="gmail" placeholder="@gmail.com" id="gmail" readonly size="8">
+                    <label for="password"><h3>Create a password</h3></label>
+                    <input type="password" name="password" id="password" required="required" maxlength="8" size="39"/>
+                    <label for="password"><h3>Confirm your password</h3></label>
+                    <input type="password" name="password" required="required" maxlength="8" size="39"/>
+                    <label for="birthday"><h3>Birthday</h3></label>
+                    <select name="mes">
+                        <option value="">Month</option> <!-- ver esto-->
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                    <input type="text" id="date" name="day" placeholder="Day" required="required" size="5"/>
+                    <input type="text" id="date" name="year" placeholder="Year" required="required" size="6"/>
+                    <label for="gender"><h3>Gender</h3></label>
+                    <select name="gender">
+                        <option value="" id="gender">I am...</option>
+                        <option value="female" id="gender">Female</option>
+                        <option value="male" id="gender">Male</option>
+                    </select>
+                    <label for="phone"><h3>Mobile number</h3></label>
+                    <div class="mobile">
+                        <select name="country">
+                            <option value="arg"><img src="tw.png" alt="pick" width="10px" height="10px"></option>
+                        </select>
+                        <input type="text" name="phone" value="+54" required="required" maxlength="11" size="27"/>
+                    </div>
+                    <label for="email"><h3>You current email address</h3></label>
+                    <input type="email" name="email" id="email" required="required" size="38"/>
+                    <label for="location"><h3>Location</h3></label>
+                    <select name="location">
+                        <option value="argentina" id="country">Argentina</option>
+                        <option value="paraguay" id="country">Paraguay</option>
+                        <option value="bolivia" id="country">Bolivia</option>
+                        <option value="uruguay" id="country">Uruguay</option>
+                    </select>
+                    <br/>
+                    <input type="submit" id="button" name="submit" value="Next step"/>
+            </form>
+        </div>
+    </body>
+</html>
