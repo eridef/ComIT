@@ -1,0 +1,116 @@
+body{
+    -webkit-background-size: cover;
+    background-image: url('img/03.jpg');
+    background-attachment: fixed;
+    background-position: absolute;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 2px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 5%;
+    height: 70px;
+    width: 90%;
+    background-color: rgba( 0, 0, 0, 1);
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+#search input{
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+}
+#busqueda{
+    position: relative;
+    top: 3px;
+}
+nav a{
+    text-decoration: none;
+    color:  #367138;
+    font-size: 20px;
+}
+nav a:hover{
+    color: whitesmoke;
+    font-size: 22px;
+}
+header{
+    height: auto;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    word-spacing: 15px;
+    text-shadow: 4px 0px 3px #958282;
+    text-align: center;
+}
+#show{
+    background-color: /*rgba(255, 255, 255, 0.1);*/ purple;
+    border: 1px solid whitesmoke;
+    width: 65%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+h3{
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.news{
+    position: relative;
+}
+#post1, #post2, #post3{
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 30%;
+    display: inline-block;
+    margin: -30px 0 10px 7px;
+    padding: 20px 0px 10px 15px;;
+}
+#secundaria{
+    background-color: /*rgba(255, 255, 255, 0.2);*/ orange;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    width: 25%;
+    height: auto;
+}
+aside{
+    background-color: lime;
+    position: absolute;
+    top: 277%;
+    right: 4%;
+    width: 25%;
+}
+footer{
+    position: absolute;
+    top: 650%;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+}
+footer a{
+    text-decoration: none;
+    color:  #367150;
+}
+footer a:hover{
+    color: whitesmoke;
+}
+footer img{
+    vertical-align: middle;
+    border-radius: 30px;
+}
