@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(170deg, purple, #000);
+    color: white;
+    font-family: Courier New, Courier, monospace;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    font-size: 22px;
+}
+section{
+    width: 90%;
+    margin: 20px 0 0 8%;
+}
+a:hover{
+    color: lightcoral;
+}

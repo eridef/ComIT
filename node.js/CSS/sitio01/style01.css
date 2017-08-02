@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans","Helvetica Neue",sans-serif;
+    background-color: #fff;
+}
+#header{
+    background-color: #0ebb73;
+    height: auto;
+    padding: 0px;
+}
+#header img{
+    margin: 10px 0 0 50px;
+    vertical-align: top;
+}
+#header h1{
+    font-family: Courier New, Courier, monospace;
+    font-size: 40px;
+    display: inline-block;
+    width: 50%;
+    border-left: 1px solid grey;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+#header a{
+    margin-left: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #85f6c7;
+}
+h3{
+    margin-left: 5%;
+    font-size: 22px;
+    display: inline-block;
+    width: 80%;
+    border-bottom: 1px solid #aaa;
+}
+.more{
+    text-decoration: none;
+    padding-left: 30px;
+    font-size: 12px;
+}
+#network{
+    width: 100%;
+    height: auto;
+}
+#network li{
+    list-style: none;
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 0 20px 10px;
+    padding: 20px;
+}
+#network a{
+    text-decoration: none;
+    color: #0ebb73;
+}
+#javascript{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    box-shadow: 10px 5px 6px 5px #999;
+}
+#javascript h2{
+    padding: 10px 0 0 20px;
+}
+#javascript span{
+    font-size: 12px;
+    margin-left: 40px;
+}
+#article{
+    margin-left: 5%;
+    padding: 20px;
+    width: 85%;
+}
+#article span{
+    margin-left: 0px;
+}
+#sugerencias{
+    width: 100%;
+    height: auto;
+    margin: 40px 0 0 0;
+}
+#sugerencias li{
+    margin: 0 0 15px 30px;
+    list-style: none;
+}
+#sugerencias a{
+    text-decoration: none;
+    color: #0ebb73;
+}
+#pie{
+    box-shadow: 0 10px 6px 10px #999;
+    width: 100%;
+    position: absolute;
+    top: 230%;
+    padding: 20px 200px;
+    word-spacing: 20px;
+}
+#pie>img{
+    border-radius: 10px;
+    vertical-align: top;
+}
+#pie ul{
+    display: inline-block;
+}
+.left{
+    display: inline-block;
+}
+.left a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #85f6c7;
+}
