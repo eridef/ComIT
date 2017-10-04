@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eventos</title>
+  </head>
+  <body>
+    <div></div>
+    <ul></ul>
+    <button id="primer-boton">Haceme Click!!</button>
+    <button id="segundo-boton">Sacar handler</button>
+    <a href="http://google.com">Hipervinculo controlado por ECMAScript</a>
+
+    <script>
+        window.onload = function (){
+            let boton = document.querySelector('#primer-boton');
+
+            let saludar = function (){
+                alert('Hiciste click en un botón');
+            }
+
+            //boton.addEventListener ('click', saludar); 
+
+            boton.addEventListener('dblclick', function(){
+                alert('Doble Clickkk!!!!');
+            })
+
+            let botonDos = document.getElementById('segundo-boton');
+
+            botonDos.onclick = function (){
+                boton.removeEventListener('click', saludar);
+            }
+
+            let vinculo = document.querySelector('a');
+            vinculo.addEventListener('click', function(evento){
+                evento.preventDefault();
+                alert('Este hipervinculo no navega a ningún lado!!!');
+            })
+
+            let documento = document.querySelector('html');
+            documento.addEventListener('click', function(evento){
+                evento.clientX;
+                evento.clientY;
+                console.log(`x: ${evento.clientX}`, `y: ${evento.clientY}`);
+            });
+
+            const div = document.querySelector('div');
+        
+            div.style.color = 'red';
+            div.style.fontFamily = 'Arial';
+            div.style.fontSize = '30px';
+            div.style.paddingBottom = '20px';
+
+            documento.addEventListener('keypress', function(evento) {
+                const valorLetra = String.fromCharCode(evento.charCode);
+                div.textContent += valorLetra; //no funciona
+            });
+
+        }
+    </script>
+  </body>
+</html>

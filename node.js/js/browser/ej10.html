@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS en browser</title>
+    </head>
+    <body>
+        <h1>JS en el browser</h1>
+
+        <script>
+                alert('Bienvenido al sitio');
+
+                let aviso = function(){
+                    alert('Hace 5 segundos que estas viendo este sitio');
+                }
+
+                setTimeout(aviso, 5000);
+                clearTimeout(setTimeout(aviso, 5000))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+
+  <script>
+      window.onload = function(){
+          const form = document.querySelector('form');
+          let body = document.querySelector('body');
+          let username = form.elements[0].value;
+          let password = form.elements[1].value;
+
+          username = 'Morty'; 
+          password = '12345';
+
+          let datos = [
+              {nombre: 'username', valor: username},
+              {nombre: 'password', valor: password}
+          ];
+
+          let lista = document.createElement('ul');
+
+          form.onsubmit = function(evento){
+            evento.preventDefault();
+            datos.forEach(function(campo){
+            let item = document.createElement('li');
+            item.textContent = campo.nombre + ': ' + campo.valor;
+            lista.appendChild(item);
+            })
+          }
+
+          body.appendChild(lista);
+
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS en el Browser</title>
+        <style>
+            .tachado{
+                text-decoration: line-through;
+            }
+            li{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            window.onload = function(){
+                let body = document.querySelector('body');
+                let lista = document.createElement('ul');
+                let tareas = ['tarea 1', 'tarea 2', 'tarea 3', 'tarea 4', 'tarea 5', 'tarea 6', 'tarea 7', 'tarea 8', 'tarea 9', 'tarea 10'];
+                tareas.forEach(function(tarea){
+                    let item = document.createElement('li');
+                    let itemClase = item.classList;
+                    console.log(itemClase)
+                    item.onclick = function(){
+                        if (itemClase == ''){
+                            item.classList.add('tachado');
+                        }else{
+                            item.classList.remove('tachado');
+                        }   
+                    }
+                    item.textContent = tarea;
+                    lista.appendChild(item);
+                })  
+                body.appendChild(lista);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS en browser</title>
+    </head>
+    <body>
+        <h1>JS en el browser</h1>
+
+        <script>
+                let user = prompt('Ingrese su usuario');
+                let pass = prompt('Ingrese su contraseña');
+
+                alert(`Bienvenido ${user}`);
+
+                let login = function(){
+                    let confirmacion = confirm('Desea seguir logueado?');
+                    if (confirmacion){
+                        alert(`${user} renovamos tu sesión`);
+                    }else{
+                        alert(`${user} ha caducado su sesión por favor vuelva a ingresar`)
+                    }
+                } 
+
+                setTimeout(login, 10000);
+        </script>
+    </body>
+</html>

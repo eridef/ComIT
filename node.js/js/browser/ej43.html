@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+
+  <script>
+      window.onload = function(){
+          let formulario = document.querySelector('form');
+
+          let documento = formulario.action;
+          let metodo = formulario.method;
+          let enc = formulario.enctype;
+          let nombreFormulario = formulario.name;
+
+          let atributos = [
+              {nombre: 'action', valor: documento},
+              {nombre: 'method', valor: metodo},
+              {nombre: 'enctype', valor: enc},
+              {nombre: 'name', valor: nombreFormulario}
+          ];
+          
+          let body = document.querySelector('body');
+          let lista = document.createElement('ul');
+
+          atributos.forEach(function(atributo){
+              let item = document.createElement('li');
+              item.textContent = atributo.nombre; //me da object
+              lista.appendChild(item);
+          })
+
+          let item = document.createElement('li');
+
+          item.textContent = documento;
+          item.textContent = metodo;
+
+          body.appendChild(lista);
+      }
+  </script>
+</body>
+</html>

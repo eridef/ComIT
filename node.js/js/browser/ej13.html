@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS en browser</title>
+    </head>
+    <body>
+        <h1>JS en el browser</h1>
+
+        <script>
+                var segundos = prompt('Cada cuantos segundos renovamos sesión??');
+                var intervalo = (parseInt(segundos)) * 1000;
+
+                if (segundos < 100){
+                    const saludar = function() {
+                    alert(`Han pasado ${segundos} segundos desde el inicio de sesión`)
+                    segundos+=10
+                  };
+                
+                const id = setInterval(saludar, intervalo);
+                }
+
+                //no entendí la consigna
+        </script>
+    </body>
+</html>

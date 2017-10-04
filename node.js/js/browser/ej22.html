@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Textos</title>
+</head>
+<body>
+  <h1>Titulo</h1>
+  <p>Parrafo</p>
+  <ul></ul>
+
+  <script>
+      window.onload = function () {
+        let titulo = document.querySelector('h1');
+        let titular = titulo.innerText;
+
+        let parrafo = document.querySelector('p');
+        let textoParrafo = parrafo.textContent;
+
+        titulo.textContent = textoParrafo;
+        parrafo.textContent = titular;
+      }
+  </script>
+</body>
+</html>

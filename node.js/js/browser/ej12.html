@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS en browser</title>
+    </head>
+    <body>
+        <h1>JS en el browser</h1>
+
+        <script>
+                var segundos = 0;
+
+                if (segundos < 100){
+                    const saludar = function() {
+                    alert(`Han pasado ${segundos} segundos desde el inicio de sesión`)
+                    segundos+=10
+                  };
+                
+                const id = setInterval(saludar, 10000);
+                }
+                  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Todo ECMAScript Baby!</title>
+    </head>
+    <body>
+        
+
+        <script>
+            window.onload = function () {
+                let body = document.querySelector('body');
+                let nombres = ['Clarise', 'Juana', 'Diana', 'Casilda', 'Alejandra', 'Amy', 'Marion', 'Gerda', 'Marianne', 'Ray'];
+                let lista = document.createElement('ul');
+                var item;
+
+                nombres.forEach(function(nombre){
+                    item = document.createElement('li');
+                    item.textContent = nombre;
+                    lista.appendChild(item);
+                });
+                
+                body.appendChild(lista);
+            }
+        </script>
+    </body>
+</html>

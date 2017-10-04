@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+header{
+	margin-top: 10px;
+	border-bottom: 2px solid #07BEB8;
+
+}
+.bar{
+	margin-top: 15px;
+}
+section{
+	margin-top: 30px;
+}
+span{
+	padding: 5px;
+}
+a{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+}
+a:hover{
+font-weight: bolder;
+}
+article{
+margin: 0 auto;
+border-right: 1px solid #07BEB8;
+}
+.cuatro{
+	margin-right: -5px;
+}
+p{
+	margin-top: 20px;
+	text-align: justify;
+}
+.foto{
+	margin: 0 3%;
+	overflow: hidden;
+}
+.spotify{
+	border-right: none;
+}
+.segunda{
+	height: 100px;
+	border: 1px dashed #000000;
+}
+
+
+
+
+/*--------RESEÑAS--------*/
+.resena{
+	border-right: none;
+	border-bottom: 1px solid #07BEB8;
+}
+.label-warning{
+	margin-bottom: 5px;
+}
+/*--------FIN RESEÑAS--------*/
+
+/*--------MODAL--------*/
+.modal-header {
+    border-bottom: 1px solid #07BEB8;
+}
+.modal-footer {
+    border-top: 1px solid #07BEB8;
+}

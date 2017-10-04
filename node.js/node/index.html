@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node a todo vapor</title>
+</head>
+<body>
+    <header>
+        <h1>HOME</h1>
+    </header>
+
+    <a href="productos.html">Productos</a>
+
+    <script>
+        window.onload = function(){
+            let body = document.querySelector('body');
+            let subtitulo = document.createElement('h2');
+            subtitulo = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, facilis at delectus quibusdam asperiores placeat veniam cupiditate perferendis velit accusamus iure officia corrupti dolores cum impedit sint eius sequi quod.';
+            body.appendChild(subtitulo);
+
+            let contador = [0, 1, 2];
+
+            contador.forEach(function(num){
+                let parrafo = document.createElement('p');
+                parrafo.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, facilis at delectus quibusdam asperiores placeat veniam cupiditate perferendis velit accusamus iure officia corrupti dolores cum impedit sint eius sequi quod.';
+                body.appendChild(parrafo);
+            });
+
+            let link = document.createElement('a');
+            link.href = 'productos.hmtl';
+            body.appendChild(link);
+        }
+    </script>
+</body>
+</html>

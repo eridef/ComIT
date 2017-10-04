@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Todo ECMAScript Baby!</title>
+    </head>
+    <body>
+        
+
+        <script>
+            window.onload = function () {
+                let body = document.querySelector('body');
+                let numeros = [];
+                unoAUno(0);
+
+                function unoAUno (numero){
+                    while (numero <= 100){
+                        numeros.push(numero);
+                        numero++;
+                    }
+                }
+
+                let lista = document.createElement('ul');
+                let item;
+
+                numeros.forEach(function(numero, indice){
+                    for (let indice = 0; indice <= numeros.length -1; indice++){
+                        item = document.createElement('li');
+                        item.textContent = numero;
+                    }
+                })
+                //este callback recorre el array y nombra el item pero lo sobre escribe dandome solo un item con el último numero
+                
+                lista.appendChild(item);
+                body.appendChild(lista);
+            }
+        </script>
+    </body>
+</html>

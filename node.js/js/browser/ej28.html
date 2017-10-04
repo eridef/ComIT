@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo ECMAScript Baby!!</title>
+</head>
+<body>
+
+    <script>
+        window.onload = function(){
+            let body = document.querySelector('body');
+            let lista = document.createElement('ul');
+
+            let nombre = window.confirm('Quiere ingresar un nombre?')
+            
+            if (nombre){
+                let nombreIngresado = window.prompt('Ingresar nombre');
+                let item = document.createElement('li');
+                item.textContent = nombreIngresado;
+                lista.appendChild(item);
+            }
+            body.appendChild(lista);
+
+            //me falta el par impar
+        }
+    </script>
+</body>
+</html>

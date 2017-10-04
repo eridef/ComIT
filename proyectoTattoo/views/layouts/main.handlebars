@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <title>Tattoo Page</title>
+</head>
+<body>
+    <!-- menu fixed -->
+    {{> nav this}}
+    <!-- fin menu fixed -->
+
+    <!-- header -->
+    <header id="encabezado"> <!-- titulo -->
+        <h1>Nombre de la página</h1>
+        <a href="#home"><h3 id="header">Another cool and crazy site template</h3></a>
+    </header>
+    <!-- fin header -->
+
+    <!-- contenedor -->
+    <div class="container-fluid">
+
+        <!-- section news -->
+        <section id="left">
+
+            <!--
+            <section class="news">
+                <div class="post">
+                    <img src="img/craneo.jpg" alt="craneo neo tradicional" title="craneo neo tradicional" id="post">
+                    <h4>Cráneo en Neo <strong>| Artista</strong></h4>
+                    <p>09 agosto 2017</p>
+                    <a href="#" target="_black"><img src="img/perfil.jpg" alt="artist" title="artist" class="profile"></a>
+                </div>
+                <div class="post">
+                    <img src="img/espiral.jpg" alt="acuarelas" title="acuarelas" id="post2">    
+                    <h4>Espiral en acuarelas <strong>| Artista</strong></h4>
+                    <p>09 agosto 2017</p>
+                    <a href="#" target="_black"><img src="img/perfil.jpg" alt="artist" title="artist" class="profile"></a>
+                </div>
+                <div class="post">
+                    <img src="img/realismo.jpg" alt="realismo" title="realismo" id="post">
+                    <h4>Realismo en tattoo <strong>| Artista</strong></h4>
+                    <p>09 agosto 2017</p>
+                    <a href="#" target="_black"><img src="img/perfil.jpg" alt="artist" title="artist" class="profile"></a>
+                </div>
+                <div class="post">
+                    <img src="img/craneo.jpg" alt="craneo neo tradicional" title="craneo neo tradicional" id="post">
+                    <h4>Cráneo en Neo <strong>| Artista</strong></h4>
+                    <p>09 agosto 2017</p>
+                    <a href="#" target="_black"><img src="img/perfil.jpg" alt="artist" title="artist" class="profile"></a>
+                </div>
+            </section>
+            -->
+
+            <!-- aside búsqueda -->
+            <aside>
+                <input type="search" name="buscador_mapa" id="buscador_mapa" size="35" placeholder="Búsqueda por nombre, calle, barrio, localidad, provincia por ej.: 'Glew'"/>
+                <input type="submit" name="submit" id="button" value="Buscar"/>
+                <br/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2475567264064!2d-58.438120684106195!3d-34.59790108046096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7474b80f59%3A0x2c244a35197960f8!2sAv.+Ra%C3%BAl+Scalabrini+Ortiz+582%2C+C1414DNS+CABA!5e0!3m2!1ses!2sar!4v1499195785619" width="320" height="280" seamless style="border:0;"></iframe>
+            </aside>
+            <!-- fin aside búsqueda -->
+        </section>
+        <!-- fin section news -->
+
+        <!-- section home artist style -->
+        <section id="principal">
+        {{{body}}}
+        </section>
+
+        <!-- footer -->
+        <footer>
+        {{> footer this}}
+        </footer>
+        <!-- fin footer -->
+
+    </div>
+    <!-- fin contenedor -->
+
+    <!-- JQUERY -->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+
+    <!-- JS -->
+    <script src="/js/script.js"></script>
+
+    <!-- bootstrap -->
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

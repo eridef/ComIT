@@ -1,0 +1,4 @@
+como hacer busqueda de mapa (ajax)
+perfiles
+base de datos
+secciones: artistas y estilos (pocos items)

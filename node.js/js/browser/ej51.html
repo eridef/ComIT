@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Todo ECMAScript Baby!</title>
+    </head>
+    <body>
+        
+
+        <script>
+            window.onload = function () {
+                let respuesta = '{"title": "A New Hope", "episode_id": 4, "species": ["https://swapi.co/api/species/5/", "https://swapi.co/api/species/3/", "https://swapi.co/api/species/2/", "https://swapi.co/api/species/1/", "https://swapi.co/api/species/4/"]}';
+
+                let respuestaJs = JSON.parse(respuesta); //xmlhttp.responseText llamado a ajax
+
+                console.log(respuestaJs.title);
+                console.log(respuestaJs.episode_id);
+
+                let especies = respuestaJs.especies;
+
+                especies.forEach(function(link){
+                    console.log(link);
+                })
+            }
+        </script>
+    </body>
+</html>
