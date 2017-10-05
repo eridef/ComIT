@@ -1,4 +1,5 @@
 como hacer busqueda de mapa (ajax)
 perfiles
+responsive
 base de datos
 secciones: artistas y estilos (pocos items)

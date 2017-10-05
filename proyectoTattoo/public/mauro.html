@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <title>Mauro Guinter</title>
+    <style>
+        @font-face {
+        font-family: 'Great Vibes';
+        src: url('/font_head/greatvibes-regular.ttf');
+        }
+        @font-face{
+        font-family: 'Josefin Slab';
+        src: url('/font_body/josefinslab-semibold.ttf');
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Slab', serif;
+        }
+        #izquierda{
+            background-image: url('/img/mauroGuinter/color/col13.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 680px;
+            border-right: 3px solid white;
+        }
+        #derecha{
+            background: #96CD94;
+            height: 680px;
+            
+        }
+        h1{
+            font-family: 'Great Vibes', cursive;
+            font-size: 80pt;
+            margin: 30px 0 40px 30px;
+        }
+        p{
+            font-size: 24px;
+            text-align: center;
+        }
+        .ciudad{
+            text-align: right;
+            margin: 60px 20px 30px 0;
+        }
+        .ciudad a{
+            color: #333333;
+        }
+        .ciudad a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        #enlace{
+            display: inline-block;
+            margin: 30px 0 20px 70px;
+            font-size: 20px;
+        }
+        #enlace a{
+            color: #333333;
+        }
+        #enlace a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        #foto-artista{
+            position: absolute;
+            top: 250px;
+            left: 560px;
+        }
+        .foto-artista{
+            border: 3px solid white;
+            border-radius: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- izquierda -->
+            <div id="izquierda" class="col-md-6">
+                <header>
+                    <h1></h1>
+                </header>
+            </div>
+            <!-- fin izquierda -->
+            <!-- derecha -->
+            <div id="derecha" class="col-md-6">
+                <div id="descripcion-artista">
+                    <h1>Mauro Guinter</h1>
+                    <div id="enlace"><a href="https://www.facebook.com/maurtt" target="_black">Facebook</a></div>
+                    <div id="enlace"><a href="https://twitter.com/" target="_black">Twitter</a></div>
+                    <div id="enlace"><a href="https://www.instagram.com/maurtttst"target="_black">Instagram</a></div>
+                    <div id="enlace"><a href="mailto:">Email</a></div>
+                    <p class="ciudad"><a href="https://www.google.com.ar/maps/place/power+machine/@-34.5266992,-58.516812,15z/data=!4m5!3m4!1s0x0:0x883bdcdb51e30aa4!8m2!3d-34.5266992!4d-58.516812">Munro</a> - Buenos Aires</p>
+                    <p>"PLAYHARDDDD"</p>
+                    <!-- galeria -->
+                    <div id="galeria">
+                        
+                    </div>
+                    <!-- fin galeria -->
+                </div>
+            </div>
+            <!-- fin derecha -->
+        </div>
+        <!-- foto central artista -->
+        <div id="foto-artista">
+            <img src="img/mauroGuinter/profile.png" class="foto-artista" alt="tony-cipolleta" title="tony-cipolleta"/>
+        </div>
+        <!-- fin foto central artista -->
+    </div>
+    
+    <!-- JQUERY -->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    
+    <!-- JS -->
+    <script src="/js/script.js"></script>
+    
+    <!-- bootstrap -->
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
