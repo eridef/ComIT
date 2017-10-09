@@ -1,0 +1,32 @@
+{
+    "estilos": [
+        {
+            "nombre": "Trash Polka",
+            "descripcion": "Ha nacido en  Buena Vista Tattoo en Alemania de la mano de Simone Plaff y Volko Merschky . Ellos mismos lo definen como una mezcla de “realismo y basura”, lo natural y lo abstracto, el pasado y el futuro…En definitva una mezcla de contrastes opuestos y a la vez tener una armonía. Se combinan con formas geométricas, manchas de pintura , siluetas o retratos, espacios vacíos formando figuras, brochazos, líneas sin par.. siempre con el Negro contra el rojo. Es a su vez el orden y el desorden , realismo y borrones sin sentidos que hacen que este estilo tenga mucho impacto y sea original. Uno de los convenientes o ventajas de este estilo es que normalmente es un tatuaje a gran escala; si buscas un tatuaje pequeño este no es tu estilo, pero si quieres un tatuaje que llame la atención y sea único este podría ser tu estilo.",
+            "referentes": ["https://www.facebook.com/simone.pfaff.10", "https://www.facebook.com/volko.merschky.5"],
+            "fotos": ["00.jpg", "01.jpg", "02.jpg", "03.jpg"],
+            "artistasRelacionados": ["tony.html"],
+            "nombreArtistaRelacionado": ["Tony Cipolletta"]
+        },
+        
+        {
+            "nombre": "Hiperrealismo",
+            "descripcion": "Como se puede deducir del propio nombre, consiste en la realización de piezas extremadamente fieles a los diseños originales. Aunque el tatuaje puede ser de cualquier cosa, dentro de este ámbito nos encontramos sobretodo con retratos o representaciones de animales. La realización de un tatuaje hiperrealista no ofrece lugar a la interpretación subjetiva, el artista debe ajustarse y ser capaz de plasmar los detalles más inverosímiles del motivo. Una de los aspectos más importantes de este tipo de tatuajes es la iluminación del diseño, y debe ser tratada con cautela, ya que va a ser lo que finalmente dé al tatuaje ese carácter real. Cómo podemos ver puede ser a color o en blanco y negro. Este estilo es el perfecto también para retratar a nuestros ídolos o grandes héroes que se merezcan un hueco en nuestra piel. En definitiva es la manera ideal de conseguir una pieza fiel a la realidad al 100%.",
+            "referentes": ["https://www.facebook.com/DmitriySamohin"],
+            "fotos": ["08.jpg", "09.jpg", "10.jpg", "11.jpg"],
+            "artistasRelacionados": [""],
+            "nombreArtistaRelacionado": [""]
+        },
+        
+        {
+            "nombre": "Tradicional (Old School)",
+            "descripcion": "El Tradicional u Old School (Traditional tattoing tambien), es uno de los mas famosos estilos americanos de tatuaje, nacido al rededor de los primeros años del 1900. Hoy en dia el tradicional tiene muchas variantes, y miles de artistas lo desarrollaron con su estilo propio, al rededor del mundo. Nacio en el bajo mundo estadounidense, cuando el tatuaje aun era creido solo para indios, marineros y prostitutas. Se caracteriza por algunos detalles basicos: Lineas gruesas firmes y sin modulacion, hoy en dia generalmente se usan lineas de 9rs 0.35 , 11rl , incluso agujas de 13RL. Colores solidos y en una paleta reducida: Rojos, amarillos, verdes, azules, y MUCHO negro. Diseños simples pero que dentro de los mismos tienen una complejidad absoluta, la composicion es equilibrada y detallada pero no excesiva, no hay detalles realistas (tal vez algunos en las mejillas sonrojadas de las mujeres, o en el sombreado del diseño ya que SIEMPRE responde a las reglas basicas de luz y sombra).",
+            "referentes": ["https://sailorjerry.com/en/"],
+            "fotos": ["04.jpg", "05.jpg", "06.jpg", "07.jpg"],
+            "artistasRelacionados": ["tony.html", "pilar.html", "mauro.html"],
+            "nombreArtistaRelacionado": ["Tony Cipolletta", "Pilar White","Mauro Guinter"]
+        }
+    ]
+}
+
+/*deberia poner referencia a cada objeto*/

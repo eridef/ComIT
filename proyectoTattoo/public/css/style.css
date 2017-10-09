@@ -68,7 +68,6 @@ nav{
     width: 240px;
     margin-right: 10px;
     text-align: center;
-    visibility: hidden;
 }
 #busqueda:hover{
     color: #C70039;
@@ -78,10 +77,11 @@ nav{
 #submit{
     border: none;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 #submit img{
     border-radius: 10px;
+    opacity: 0.5;
 }
 #encabezado{
     background-image: url(/img/03.jpg);
@@ -111,23 +111,6 @@ header a{
 #header h3:hover{
     color: #958282;
 }
-/*
-#amy{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
-#amy:hover{
-    width: 778px;
-    height: 284px;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1.5);
-    transform: scale(1.1);
-}
-*/
-
 #left{
     display: inline-block;
     width: 25%;
@@ -166,19 +149,8 @@ header a{
 }
 aside{
     position: relative;
-    top: 30px;
-}
-aside input{
-    border-radius: 10px;
-    border: none; 
-    height: 30px;
-}
-aside input:hover{
-    border: 1px solid #bbb;
-}
-aside iframe{
-    margin-top: 30px;
-    border: 1px solid #c3c0c0;
+    top: 90px;
+    left: 15px;
 }
 #principal{
     display: inline-block;
@@ -194,10 +166,10 @@ aside iframe{
     display: inline-block;
     margin-left: 40px;
     padding: 20px 0px 20px 40px;
-    border-bottom: 1px solid #c3c0c0;
+    border-top: 1px solid #c3c0c0;
     border-right: 1px solid #c3c0c0;
     position: relative;
-    top: 0px;
+    top: 10px;
 }
 .titulo h4{
     font-size: 22px;
@@ -207,10 +179,10 @@ aside iframe{
     height: 98px;
     display: inline-block;
     font-size: 16px;
-    padding: 0 0px 0px 30px;
-    border-bottom: 1px solid #c3c0c0;
+    padding: 30px 0px 0px 30px;
+    border-top: 1px solid #c3c0c0;
     position: relative;
-    top: 2px;
+    top: 10px;
     left: -6px;
 }
 .date a{
@@ -239,6 +211,9 @@ aside iframe{
     width: 900px;
     margin-top: 30px;
     margin-bottom: 40px;
+}
+h4{
+    font-size: 22px;
 }
 .events{
     position: relative;

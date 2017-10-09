@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <title>Mauro Guinter</title>
     <style>
         @font-face {
         font-family: 'Great Vibes';
-        src: url('/font_head/greatvibes-regular.ttf');
+        src: url('font_head/greatvibes-regular.ttf'); /*falta barra home*/
         }
         @font-face{
         font-family: 'Josefin Slab';
-        src: url('/font_body/josefinslab-semibold.ttf');
+        src: url('font_body/josefinslab-semibold.ttf'); /*falta barra home*/
         }
         body{
             margin: 0;
@@ -22,30 +24,29 @@
             font-family: 'Josefin Slab', serif;
         }
         #izquierda{
-            background-image: url('/img/mauroGuinter/color/col13.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            /*background-image: url('/img/mauroGuinter/color/col13.jpg');*/
             height: 680px;
-            border-right: 3px solid white;
+            padding: 0; 
         }
         #derecha{
-            background: #96CD94;
+            background-color: #96CD94;
+            background: -webkit-linear-gradient(to bottom, #1d976c, #93f9b9); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #1d976c, #93f9b9);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             height: 680px;
-            
+            border-left: 3px solid white;
         }
         h1{
             font-family: 'Great Vibes', cursive;
             font-size: 80pt;
-            margin: 30px 0 40px 30px;
+            margin: 30px 0 0px 30px;
         }
         p{
             font-size: 24px;
             text-align: center;
         }
         .ciudad{
-            text-align: right;
-            margin: 60px 20px 30px 0;
+            text-align: center;
+            margin: 0px 20px 30px 0;
         }
         .ciudad a{
             color: #333333;
@@ -55,8 +56,13 @@
             color: white;
         }
         #enlace{
+            position: absolute;
+            top: 0;
+        }
+        .enlace{
+            z-index: 5;
             display: inline-block;
-            margin: 30px 0 20px 70px;
+            margin: 30px 0 20px 110px;
             font-size: 20px;
         }
         #enlace a{
@@ -68,12 +74,16 @@
         }
         #foto-artista{
             position: absolute;
-            top: 250px;
+            top: 120px;
             left: 560px;
         }
         .foto-artista{
             border: 3px solid white;
             border-radius: 120px;
+        }
+        .owl-carousel{
+            width: 100%;
+            margin-top: 120px;
         }
     </style>
 </head>
@@ -82,8 +92,14 @@
         <div class="row">
             <!-- izquierda -->
             <div id="izquierda" class="col-md-6">
-                <header>
-                    <h1></h1>
+                <header class="row">
+                    <div id="enlace">
+                        <div class="enlace"><a href="https://www.facebook.com/maurtt" target="_black"><img src="/img/iconos/facebook.png" alt=""></a></div>
+                        <div class="enlace"><a href="https://twitter.com/" target="_black"><img src="/img/iconos/twitter.png" alt=""></a></div>
+                        <div class="enlace"><a href="https://www.instagram.com/maurtttst"target="_black"><img src="/img/iconos/instagram.png" alt=""></a></div>
+                        <div class="enlace"><a href="mailto:"><img src="/img/iconos/gmail.png" alt=""></a></div>
+                    </div>
+                    <img name="slide" height="680px" width="110%"/>
                 </header>
             </div>
             <!-- fin izquierda -->
@@ -91,15 +107,25 @@
             <div id="derecha" class="col-md-6">
                 <div id="descripcion-artista">
                     <h1>Mauro Guinter</h1>
-                    <div id="enlace"><a href="https://www.facebook.com/maurtt" target="_black">Facebook</a></div>
-                    <div id="enlace"><a href="https://twitter.com/" target="_black">Twitter</a></div>
-                    <div id="enlace"><a href="https://www.instagram.com/maurtttst"target="_black">Instagram</a></div>
-                    <div id="enlace"><a href="mailto:">Email</a></div>
                     <p class="ciudad"><a href="https://www.google.com.ar/maps/place/power+machine/@-34.5266992,-58.516812,15z/data=!4m5!3m4!1s0x0:0x883bdcdb51e30aa4!8m2!3d-34.5266992!4d-58.516812">Munro</a> - Buenos Aires</p>
                     <p>"PLAYHARDDDD"</p>
                     <!-- galeria -->
                     <div id="galeria">
-                        
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="img/mauroGuinter/color/col1.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/color/col2.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/color/col5.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/color/col9.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/color/col6.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/color/col7.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg1.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg2.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg11.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg9.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg5.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg4.jpg" alt="" width="300px" height="170px"></div>
+                            <div class="item"><img src="img/mauroGuinter/blackGrey/bg6.jpg" alt="" width="300px" height="170px"></div>
+                        </div>
                     </div>
                     <!-- fin galeria -->
                 </div>
@@ -118,9 +144,46 @@
     
     <!-- JS -->
     <script src="/js/script.js"></script>
+    <script>
+        // inicio
+        var i = 0; 			
+        var images = ['col13.jpg', 'col12.jpg', 'col11.jpg', 'col10.jpg'];	
+        var time = 3000;
+            
+
+        // cambio de img
+        function changeImg(){
+            document.slide.src = 'img/mauroGuinter/color/' + images[i]; //falta la barra home para express
+
+            if(i < images.length - 1){
+            i++; 
+            } else { 
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        // declarando el window.onload no iniciaba
+        window.onload=changeImg;
+        
+    </script>
     
     <!-- bootstrap -->
     <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- own carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true
+            });
+
+            });
+    </script>
 </body>
 </html>

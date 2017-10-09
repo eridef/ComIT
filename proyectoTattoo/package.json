@@ -10,8 +10,10 @@
   "author": "Érica",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "express-handlebars": "^3.0.0",
-    "lesshat": "^4.1.0"
+    "lesshat": "^4.1.0",
+    "mongodb": "^2.2.31"
   }
 }

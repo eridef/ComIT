@@ -1,5 +1,14 @@
 como hacer busqueda de mapa (ajax)
-perfiles
-responsive
-base de datos
-secciones: artistas y estilos (pocos items)
+
+
+Viernes 
+**base de datos | armada |
+**perfiles ---> galeria, background dinámico |logrado|
+**secciones
+
+Sábado
+**secciones: artistas y estilos (pocos items) |logrado|
+
+Domingo
+**barra de búsqueda
+**responsive

@@ -1,0 +1,22 @@
+<!-- resultados de búsqueda -->
+
+<style>
+  .buscar{
+    background-color: whitesmoke;
+    width: 95%;
+    position: absolute;
+    top: 55px;
+    padding: 40px;
+  }
+  p{
+    width: 80%;
+    word-wrap: break-word;
+  }
+</style>
+
+
+<section class="buscar">
+    {{#each resultado}}
+      <p>{{this}}</p>
+    {{/each}}
+</section>

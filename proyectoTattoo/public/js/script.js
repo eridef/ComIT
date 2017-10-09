@@ -1,4 +1,5 @@
 //menu
+/*
 const buscar = document.getElementById('submit');
 const input = document.getElementById('busqueda');
 buscar.onclick = function(evento){
@@ -6,6 +7,23 @@ buscar.onclick = function(evento){
     input.style;
     input.style.visibility = 'visible';
 }
+*/
+
+//busqueda 
+
+const crearListaDeProductos = (resultado) => {
+    const lista = document.createElement('ul')
+    const contenedor = document.querySelector('#busqueda')
+    
+    productos.forEach((resultado) => {
+      const elemento = document.createElement('li')
+      elemento.textContent = resultado.nombre
+      lista.appendChild(elemento)
+    })
+ 
+    contenedor.appendChild(lista)
+  }
+
 
 //script jquery de home-artists
 
@@ -39,7 +57,7 @@ $articles.removeClass('active blur');
 //fin jquery home-artists
 
 //img news
-let imagenes = ['craneobyn.jpg', 'espiralbyn.jpg', 'realismobyn.jpg', 'craneobyn.jpg'];
+let imagenes = ['new0byn.png', 'new1byn.png', 'new2byn.png', 'new3byn.png'];
 
 let section = document.getElementById('left');
 
@@ -48,10 +66,10 @@ imagenes.forEach(function(foto){
     let div = document.createElement('div');
     let titulo = document.createElement('h4');
     let link = document.createElement('a');
-    titulo.textContent = 'descripción de DB';
+    titulo.textContent = 'Gracias por el aguante • Pilar White';
     link.href = 'DB propiedad link'
     div.classList.add('post');
-    imagen.src = `img/${foto}`;
+    imagen.src = `/img/pilarWhite/news/${foto}`;
 
     imagen.onmouseover = function(){
         //modifico el nombre de la foto
@@ -62,7 +80,7 @@ imagenes.forEach(function(foto){
 
     imagen.onmouseout = function(){
         //modifico el nombre de la foto
-        const source = imagen.src.replace('.jpg', 'byn.jpg');
+        const source = imagen.src.replace('.png', 'byn.png');
         //reemplazo el src
         imagen.src = source;
     }

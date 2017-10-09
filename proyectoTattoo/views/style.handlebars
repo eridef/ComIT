@@ -1,1 +1,62 @@
 <!-- TEMPLATE STYLE -->
+
+<style>
+    .tecnica{
+        font-size: 35px;
+        padding-top: 30px;
+    }
+    .lista-estilo{
+        background-color: #EAF1EA;
+        margin: 40px 0 0 20px;
+        padding: 0px 30px 30px 30px;
+    }
+    .lista-estilo a{
+        color: #C70039;
+    }
+    .lista-estilo a:hover{
+        text-decoration: none;
+    }
+    .link{
+        display: block;
+    }
+    p{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .fotos{
+        display: inline-block;
+        width: 210;
+        height: 210px;
+        margin: 20px 0 20px 0px;
+    }
+    .fotos img{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<div class="lista-estilo" id="home">
+    {{#each estilos}}
+        {{#each estilos}}
+            <header>
+                <h3 class="tecnica">{{this.nombre}}</h3>
+            </header>
+            <section>
+                <p>{{this.descripcion}}</p>
+                <p>Referentes:</p>
+                {{#each referentes}}
+                    <a href="{{this}}" class="link" target="_blank">{{this}}</a>
+                {{/each}}
+                
+                {{#each fotos}}
+                    <div class="fotos"><img src="/img/estilos/{{this}}" alt=""/></div>
+                {{/each}}
+
+                <p>Artistas relacionados:</p>
+                <a href={{#each artistasRelacionados}}"{{this}}"{{/each}} class="link" target="_blank">{{#each nombreArtistaRelacionado}}{{this}} {{/each}}</a>
+            </section>
+        {{/each}}
+    {{/each}}
+</div>
+
+<!-- que se generen las vistas de los distintos estilos desde js -->

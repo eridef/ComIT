@@ -4,15 +4,8 @@
         position: relative;
         width: 800px;
         height: 800px;
-        margin: 30px auto;
+        margin: 30px auto 0 auto;
     }
-
-    /*Let’s clear the floats (out articles will be floating) with the help of the :before and :after pseudo elements:*/
-    .ib-container:before,
-    /*.ib-container:after {
-        content:"";
-        display:table;
-    }*/
 
     .ib-container:after {
         clear:both;
@@ -21,9 +14,9 @@
     /*We’ll make them float and add two box shadows, of which the white one will have a large spread distance. Also, we’ll add the transition for three properties: opacity, transform (we want to scale it) and box-shadow:*/
     .ib-container article{
         width: 770px;
-        height: 400px;
+        height: 410px;
         background: #fff;
-        cursor: pointer;
+        cursor: auto;
         float: left;
         border: 10px solid #fff;
         text-align: left;
@@ -116,6 +109,18 @@
     .ib-container article.active p{
         opacity: 1;
     }
+    header{
+        text-align: center;
+    }
+    .redes{
+        opacity: 0.5;
+        display: inline-block;
+        width: 50px;
+        margin:5px 40px 10px 50px;
+    }
+    .redes:hover{
+        opacity: 0.9;
+    }
 </style>
 
 
@@ -130,42 +135,42 @@
 
         <!-- fecha -->
         <div class="date">
-            <p>Del 13 al 19 • <strong>Agosto</strong></p>
-            <a href="#" target="_blank">Todos los artistas</a>
+            <p>Del 9 al 15 • <strong>Octubre</strong></p>
+            <a href="/artistas">Todos los artistas</a>
         </div>
         <!-- fin fecha -->
 
         <section class="ib-container" id="ib-container">
 		<!-- first -->
-            <article style="clear:right">
+            <article style="clear:right; margin-bottom:30px;">
                 <header>
-                    <h3><a href="#" target="_blank">Amy Lovelock</a></h3>
-                    <p>CABA</p>
-                    <a href="#"><img src="img/face.png" alt="facebook" class="redes"></a>
+                    <h3><a href="tony.html" target="_blank">Tony Cipolletta</a></h3>
+                    <p>Hurlingham</p>
+                    <a href="https://www.facebook.com/tony.cipolletta" target="_blank"><img src="img/face.png" alt="facebook" class="redes"></a>
                     <a href="#"><img src="img/ins.png" alt="instagram" class="redes"></a>
                     <a href="#"><img src="img/tw.png" alt="twitter" class="redes"></a>
-                    <a href="#"><img src="img/net.png" alt="instagram" class="redes"></a>
-                    <a href="mailto:#"><img src="img/arroba.png" alt="email" class="redes"></a>
+                    <a href="#"><img src="img/net.png" alt="web" class="redes"></a>
+                    <a href="mailto:chud_graff@hotmail.com"><img src="img/arroba.png" alt="email" class="redes"></a>
                 </header>
-                <img src="img/amy.jpg" alt="amy_tattoo" title="amy_tattoo" id="amy"/>
+                <img src="img/tony.jpg" alt="tony_tattoo" title="tony_tattoo" id="amy"/>
             </article>
             <!-- fin first -->
 
             <!-- other -->
-            <article style="width: 210px; height: 300px; margin-left: 35px">
+            <article style="width: 210px; height: 300px; margin-left: 50px">
                 <header>
-                    <h3><a href="#" target="_blank">G Tattoo</a></h3>
-                    <p>Avellaneda</p>
+                    <h3><a href="pilar.html" target="_blank">Pilar White</a></h3>
+                    <p>Lanús</p>
                 </header>
-                <img src="img/gtattoo.jpg" alt="g_tattoo" title="g_tattoo">
+                <img src="img/pilar.jpg" alt="pili_tattoo" title="pili_tattoo">
             </article>
 
             <article style="width: 210px; height: 300px">
                 <header>
-                    <h3><a href="#" target="_blank">M Tattoo</a></h3>
-                    <p>José C. Paz</p>
+                    <h3><a href="mauro.html" target="_blank">Mauro Guinter</a></h3>
+                    <p>Munro</p>
                 </header>
-                <img src="img/mtattoo.jpg" alt="g_tattoo" title="g_tattoo">
+                <img src="img/mauro.jpg" alt="mauro_tattoo" title="mauro_tattoo">
             </article>
 
             <article style="width: 210px; height: 300px">
